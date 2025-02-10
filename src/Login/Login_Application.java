@@ -124,12 +124,14 @@ public class Login_Application extends javax.swing.JFrame {
           AList.show();
           dispose();
           JOptionPane.showMessageDialog(null, "Welcome Sir/Maam ");
-      }else JOptionPane.showMessageDialog(null, "ERRPR 101 "); 
+      }else if (JTUser.getText().contains("Salamander") && JPassword.getText().contains("54321")){
+          easterD D_bug = new easterD();
+          D_bug.show();
+      } else JOptionPane.showMessageDialog(null, "ERRPR 101 "); 
     }//GEN-LAST:event_BLoginActionPerformed
 
     private void BExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BExitActionPerformed
-        // TODO add your handling code here:
-        
+      dispose();
     }//GEN-LAST:event_BExitActionPerformed
 
     /**
